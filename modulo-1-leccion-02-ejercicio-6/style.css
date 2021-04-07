@@ -33,9 +33,13 @@ body {
     imagen de fondo: https://www.fillmurray.com/110/110
     La imagen tiene que aparecer centrada y sin que se repita
     */
-    background-color: cyan;
+
+    /*background-color: cyan;
     background-image: url('https://www.fillmurray.com/110/110');
     background-repeat: no-repeat;
-    background-position:center;
+    background-position:center;*/
+
+
+    background: cyan url('https://www.fillmurray.com/110/110') no-repeat center;
     
   }
