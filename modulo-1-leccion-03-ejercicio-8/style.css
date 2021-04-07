@@ -1,0 +1,52 @@
+/*:root{
+    Escribe aquí tu código
+  }*/
+  
+  
+  body {
+    margin:0;
+  }
+  
+  header{
+    background-color:#eaeaea;
+    padding:20px
+  }
+  
+  main{
+    padding:20px
+  }
+  
+  p{
+    width:50%;
+    font-size: 16px
+  }
+  
+  ul{
+    list-style-type:none;
+    padding:0
+  }
+  
+  .title{
+    color:grey;
+    margin:0
+  }
+  
+  .subtitle{
+    color:grey;
+    margin:0
+  }
+  
+  .menu li {
+    display:inline
+  }
+  
+  .menu a {
+    color:green;
+    text-decoration:none
+  }
+  
+  p a {
+    color:green
+  }
+  
+  
