@@ -1,6 +1,7 @@
-/*:root{
-    Escribe aquí tu código
-  }*/
+:root{
+    --colorTexto: grey;
+    --colorLetra: green;
+  }
   
   
   body {
@@ -27,12 +28,12 @@
   }
   
   .title{
-    color:grey;
+    color: var(--colorTexto);
     margin:0
   }
   
   .subtitle{
-    color:grey;
+    color: var(--colorTexto);
     margin:0
   }
   
@@ -41,12 +42,12 @@
   }
   
   .menu a {
-    color:green;
+    color: var(--colorLetra);
     text-decoration:none
   }
   
   p a {
-    color:green
+    color:var(--colorLetra);
   }
   
   
