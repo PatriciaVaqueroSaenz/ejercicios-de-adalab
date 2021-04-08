@@ -1,0 +1,23 @@
+.image{
+    width: 100px;
+}
+
+.container{
+   width: 100px;
+   height: 100px;
+   padding: 10px;
+   background-color: salmon;
+   border: 5px solid black;
+   box-sizing: border-box;
+   margin: auto;
+}
+
+.container2{
+    width: 100px;
+   height: 100px;
+   padding: 10px;
+   background-color:khaki;
+   border: 5px solid black;
+   box-sizing: content-box;
+   margin: 20px auto;
+}
