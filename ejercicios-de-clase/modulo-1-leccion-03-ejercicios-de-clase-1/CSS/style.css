@@ -1,0 +1,17 @@
+.box{
+    background-color:coral;
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    border: solid 5px black;
+    margin: 180px;
+}
+
+.box:hover{
+    background-color: cadetblue;
+}
+
+
+.line{
+    background-color: greenyellow;
+}
