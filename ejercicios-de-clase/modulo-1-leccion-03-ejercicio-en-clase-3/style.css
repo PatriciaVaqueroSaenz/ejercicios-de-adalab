@@ -1,0 +1,38 @@
+:root{
+
+    --tipodeletra:'Courier New', Courier, monospace;
+    --ancho:400px;
+    --altoTotal:500px;
+}
+
+
+
+.box1{
+    font-family: var(--tipodeletra);
+    background-color:coral;
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    border: solid 5px black;
+    
+}
+
+.box2{
+    font-family: var(--tipodeletra);
+    background-color:coral;
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    border: solid 5px black;
+  
+}
+
+.box:hover{
+    font-family: var(--tipodeletra);
+    background-color: cadetblue;
+}
+
+
+.line{
+    background-color: greenyellow;
+}
