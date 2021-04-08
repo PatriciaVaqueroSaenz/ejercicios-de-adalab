@@ -1,0 +1,13 @@
+.container{
+    border: 1px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+    border: violet solid 1px;
+}
