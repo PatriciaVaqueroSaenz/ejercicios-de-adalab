@@ -1,0 +1,13 @@
+.container{
+    border: 1px solid purple;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.item{
+    background-color: rosybrown;
+    margin-left: 20px;
+    margin-right: 20px;
+}
