@@ -1,0 +1,13 @@
+.container {
+    background-color: violet;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+  }
+
+.item{
+    background-color: turquoise;
+    width: 500px;
+    border: solid blue 1px;
+  }
