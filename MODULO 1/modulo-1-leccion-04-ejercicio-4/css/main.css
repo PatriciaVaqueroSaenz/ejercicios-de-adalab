@@ -1,0 +1,32 @@
+
+.body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
+}
+
+.image {
+  width: 100%;
+}
+
+.container {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item {
+  /* background-color: salmon;
+  border: 1px solid sandybrown;*/
+  box-sizing: border-box;
+  padding: 15px;
+  width: 50%;
+}
+
+.itemX {
+  order: -1;
+  width: 100%;
+}
