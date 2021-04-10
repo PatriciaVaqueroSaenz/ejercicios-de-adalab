@@ -1,0 +1,27 @@
+*{
+    font-family: sans-serif;
+}
+
+.title{
+    font-size: 32px;
+    margin: 20px 20px;
+}
+
+.content{
+    font-size: 18px;
+    margin: 20px 20px;
+}
+.list{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.item1:hover{
+    cursor: help;
+}
+.item2:hover{
+    cursor: help;
+}
+.item3:hover{
+    cursor: help;
+}
+
