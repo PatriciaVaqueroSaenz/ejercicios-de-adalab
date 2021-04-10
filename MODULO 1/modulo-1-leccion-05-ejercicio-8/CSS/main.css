@@ -1,0 +1,15 @@
+.name{
+    position: relative;
+    top: 20px;
+}
+
+.pdf{
+    background-color: red;
+    color: white;
+    padding: 2px;
+    border-radius: 3px;
+    position: absolute;
+    top: 22px;
+    right: 5px;
+
+}
