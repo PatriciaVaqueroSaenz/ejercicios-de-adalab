@@ -1,0 +1,29 @@
+
+.document{
+    border: 8px solid black;
+    position: relative;
+
+}
+.content{
+    margin-top: 106px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,25%);
+}
+.autor{
+   font-size: 18px; 
+   margin-bottom: 40px;
+}
+.title{
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.paragraph{
+    font-size: 18px;
+    margin-bottom: 27px;
+}
+.link{
+    padding: 8px 16px;
+    margin-left: -16px;
+}
