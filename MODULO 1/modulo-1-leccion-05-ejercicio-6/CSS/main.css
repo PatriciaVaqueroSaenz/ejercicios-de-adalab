@@ -1,0 +1,12 @@
+.cookies{
+  height: 100px;
+  width: 100%;
+  background-color: yellow;
+  position: fixed;
+  bottom: 0px;
+
+}
+
+.last-item{
+ margin-bottom: 110px;
+}
