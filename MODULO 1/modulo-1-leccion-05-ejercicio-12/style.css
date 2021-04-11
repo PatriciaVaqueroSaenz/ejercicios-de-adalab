@@ -1,0 +1,120 @@
+* {
+  font-family: roboto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*--------------------------------------------------------*/
+
+.modal{
+  background-color: #00000033;
+}
+.alert{
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.alert-title{
+  font-size: 32px;
+  font-weight: 500; /*no se pone en negrita...por queee*/
+}
+.p-alert{
+  font-size: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.rechazar{
+  border: 1px solid black;
+  background-color: white;
+  height: 30px;
+  border-radius: 5px;
+}
+.suscribe{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 20px; /*-----DUDAAAAAAAAA*/
+}
+
+
+/*--------------------------------------------------------*/
+.menu {
+  padding: 0 100px;
+  background-color: black;
+  color: white;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main {
+  padding-top: 80px;
+  margin: auto;
+  max-width: 600px;
+}
+
+.info {
+  color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.texto p {
+  padding-top: 20px;
+  line-height: 1.5;
+}
+
+.texto {
+  padding-bottom: 100px;
+}
+
+.footer {
+  color: lightgrey;
+  margin: 0 100px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+hr {
+  color: lightgrey;
+}
