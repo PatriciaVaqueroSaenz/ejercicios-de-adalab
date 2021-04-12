@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+.box {
+  background: red;
+  /*
+  35% de ancho y 35% de alto
+  */
+  width: 35vw; 
+  height: 35vh;
+
+  /*
+  50% de ancho y 100% de alto
+  
+  width: 50vw; 
+  height: 100vh;*/
+
+  /*
+  10% de ancho y 10% de alto
+  
+  width: 10vw; 
+  height: 10vh;*/
+
+  /*
+  100% de ancho y 80% de alto
+  
+  width: 100vw; 
+  height: 80vh;*/
+
+}
