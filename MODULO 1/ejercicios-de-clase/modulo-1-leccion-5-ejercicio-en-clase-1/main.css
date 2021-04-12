@@ -9,3 +9,27 @@
 .color{
     background-color: thistle;
 }
+
+.container{
+    /*position: relative;*/
+    border: dotted 3px greenyellow;
+}
+
+.box-absolute{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    background-color: lightgreen;
+}
+.image{
+    background-color: lightgreen;
+    position: relative;
+}
+
+.label{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
