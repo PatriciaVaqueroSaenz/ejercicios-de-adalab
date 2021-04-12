@@ -1,0 +1,16 @@
+
+  .content{
+  background-color: red;
+  }
+
+
+@media all and (min-width:480px) {
+  .content{
+    background-color: yellow;
+  }
+}
+@media all and (min-width:768px) {
+  .content{
+    background-color: greenyellow;
+  }
+}
