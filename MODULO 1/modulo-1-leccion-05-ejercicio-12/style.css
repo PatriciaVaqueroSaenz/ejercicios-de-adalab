@@ -27,7 +27,7 @@
 }
 .alert-title{
   font-size: 32px;
-  font-weight: 500; /*no se pone en negrita...por queee*/
+  /*font-style: bold;*/
 }
 .p-alert{
   font-size: 12px;
