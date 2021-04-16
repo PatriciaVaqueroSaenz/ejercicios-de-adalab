@@ -1,6 +1,8 @@
 .page__header {
   height: 75px;
-  background-color: aquamarine;
+  background-color: lighten(aquamarine);
+
+
   @media all and (min-width:768px){
     height: 100px;
   }
