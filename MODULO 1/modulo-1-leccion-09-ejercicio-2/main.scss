@@ -1,0 +1,19 @@
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    
+    &--dark{
+            background-color: #000;
+            color: #fff;
+    }
+    
+    &:hover{
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    
+    &--light {
+            background-color: #fff;
+            color: #000;
+    }
+}
