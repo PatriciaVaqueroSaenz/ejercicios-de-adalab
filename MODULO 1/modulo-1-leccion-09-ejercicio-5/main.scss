@@ -1,0 +1,17 @@
+@mixin t($fontSize, $fontFamily) {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+}
+
+@mixin absoluteCentered() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flexCentered() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
