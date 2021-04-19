@@ -1,0 +1,36 @@
+
+.container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-template-areas: 'header header header header header header header header header header header header' 'menu menu menu menu content content content content content content content content' 'footer footer footer footer footer footer footer footer footer footer footer footer';
+}
+
+.item{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+  grid-area: header;
+  background-color: lightpink;
+}
+
+.menu{
+  grid-area: menu;
+  background-color: midnightblue;
+}
+
+.content{
+  grid-area: content;
+  background-color: coral;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: skyblue;
+}
+
