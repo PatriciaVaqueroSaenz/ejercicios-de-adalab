@@ -1,0 +1,36 @@
+
+.header.col-12{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: lightpink;
+  color: white;
+}
+
+.content.col-4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-color: midnightblue;
+  color: white;
+}
+
+.menu.col-8{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-color: coral;
+  color: white;
+}
+
+.footer.col-12{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: skyblue;
+  color: white;
+}
