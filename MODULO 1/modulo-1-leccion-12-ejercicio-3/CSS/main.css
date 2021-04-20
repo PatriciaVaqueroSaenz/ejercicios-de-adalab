@@ -1,0 +1,23 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+}
+
+.popup{
+  width: 50%;
+  height: 50%;
+  background-color: white ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  transform: translate(0,100%);
+  transition: ease transform 2s;
+}
+
+.container:hover .popup{
+  transform: translate(0,100px);
+}
