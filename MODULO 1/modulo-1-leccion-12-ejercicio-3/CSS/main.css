@@ -4,20 +4,22 @@
   background-color: skyblue;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .popup{
   width: 50%;
   height: 50%;
   background-color: white ;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
-  transform: translate(0,100%);
-  transition: ease transform 2s;
+  position: absolute;
+  bottom: -50%;
+  transition: ease bottom 2.5s;
 }
 
 .container:hover .popup{
-  transform: translate(0,100px);
+  bottom: 25%;
 }
