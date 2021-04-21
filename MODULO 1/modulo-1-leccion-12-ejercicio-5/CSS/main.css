@@ -1,0 +1,49 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: #88888844;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form{
+  width: 70%;
+  margin: 30px;
+}
+.label{
+  display: block;
+  font-size: 0.65rem;
+}
+.input{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.title{
+  color: darkcyan;
+  width: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.subtitle{
+  width: 70%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.button{
+  color: white;
+  background-color: darkcyan;
+  width: 100%;
+  height: 40px;
+  border: none;
+}
+
+@keyframes focus {
+  from{
+
+  }to{
+
+  }
+}
