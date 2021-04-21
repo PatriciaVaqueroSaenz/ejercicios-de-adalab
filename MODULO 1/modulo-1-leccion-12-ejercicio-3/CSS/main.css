@@ -17,7 +17,7 @@
   justify-content: center;
   position: absolute;
   bottom: -50%;
-  transition: ease bottom 2.5s;
+  transition: ease bottom 2s;
 }
 
 .container:hover .popup{
