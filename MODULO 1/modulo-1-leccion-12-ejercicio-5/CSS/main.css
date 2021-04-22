@@ -10,11 +10,22 @@
 .form{
   width: 70%;
   margin: 30px;
+  position: relative;
 }
 .label{
   display: block;
   font-size: 0.65rem;
 }
+.label-email{
+  position: absolute;
+  left: 4px;
+  top: 12px;
+}
+.input-email:focus .label-email{
+  animation: focus;
+  animation-duration: 5s;
+}
+
 .input{
   width: 100%;
   margin-bottom: 20px;
@@ -42,8 +53,12 @@
 
 @keyframes focus {
   from{
+    position: absolute;
+    left: 4px;
+    top: 12px;
+    
 
   }to{
-
+    top: -20px;
   }
 }
