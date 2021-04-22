@@ -20,10 +20,12 @@
   position: absolute;
   left: 4px;
   top: 12px;
+  color: #888888;
 }
 .input-email:focus .label-email{
-  animation: focus;
-  animation-duration: 5s;
+  animation-name: focus;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
 .input{
@@ -56,9 +58,10 @@
     position: absolute;
     left: 4px;
     top: 12px;
-    
+    color: #888888;
 
   }to{
     top: -20px;
+    color: black;
   }
 }
