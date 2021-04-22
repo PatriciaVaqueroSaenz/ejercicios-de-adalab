@@ -61,6 +61,8 @@
     color: #888888;
 
   }to{
+    position: absolute;
+    left: 4px;
     top: -20px;
     color: black;
   }
