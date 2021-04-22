@@ -24,7 +24,7 @@ body {
   background: #8a8a8a;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.22);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29), inset 1px 1px 1px rgba(255, 255, 255, 0.44);
-  transition: background-color ease 0.8ms;
+  transition: background-color ease 1s;
 }
 
 .button:hover {
