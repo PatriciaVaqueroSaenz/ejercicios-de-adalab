@@ -1,0 +1,12 @@
+.button{
+    background-color: lightskyblue;
+    color: white;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border: 1px solid darkblue;
+}
+
+.buttondisabled{
+    opacity: 0.2;
+}
