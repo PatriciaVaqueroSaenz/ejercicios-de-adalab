@@ -6,3 +6,8 @@ const secondDogName = 'Luna';
 
 const thirdDogImage = 'https://images.dog.ceo/breeds/affenpinscher/n02110627_7065.jpg';
 const thirdDogName = 'Lana';
+
+const listElement = document.querySelector('.list');
+
+listElement.innerHTML = `<li>${firstDogName} <img src="${firstDogImage}"></li><li>${secondDogName} <img src="${secondDogImage}"></li><li>${thirdDogName} <img src="${thirdDogImage}"></li>`;
+
