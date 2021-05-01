@@ -25,3 +25,24 @@ Cualquier contribución o sugerencia será bienvenida!
 * Lección 11: Sistema de Grid.
 * Lección 12: Animaciones CSS.
 ##### Evaluación Final
+
+***
+
+## Módulo 2:
+
+* Lección 1: Intro a la programación.
+* Lección 2: Intro a la programación II.
+* Lección 3: Condicionales.
+* Lección 4: Funciones.
+* Lección 5: Eventos.
+* Lección 6: Objetos.
+* Lección 7: Arrays y bucles.
+##### Evaluación Intermedia
+* Lección 8: Trabajo colaborativo en Git.
+* Lección 9: Arrays y bucles II.
+* Lección 10: Peticiones al servidor.
+* Lección 11: Peticiones al servidor II.
+* Lección 12: DOM avanzado.
+* Lección 13: Métodos funcionales de array.
+* Lección 14: Asincronía y temporizadores.
+##### Evaluación Final
