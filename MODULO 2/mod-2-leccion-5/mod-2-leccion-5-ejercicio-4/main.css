@@ -1,0 +1,12 @@
+.text{
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.scroll1{
+    background-color: lightblue;
+}
+
+.scroll2{
+    background-color: lightpink;
+}
