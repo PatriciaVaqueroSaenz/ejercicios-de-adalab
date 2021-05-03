@@ -1,25 +1,20 @@
 'use strict'
 
-const teacherisra = document.querySelector('.teacher--isra');
-const teachertuerto = document.querySelector('.teacher--tuerto');
-const teachernasi = document.querySelector('.teacher--nasi');
-// const favoriteIsra = teacherisra.querySelector('.favorite');
-// const favoriteTuerto = teachertuerto.querySelector('.favorite');
-// const favoriteNasi = teachernasi.querySelector('.favorite');
+const isra = document.querySelector(".teacher--isra");
+const carlos = document.querySelector(".teacher--tuerto");
+const nasi = document.querySelector(".teacher--nasi");
 
-function selected (event){
-    const teacherSelected = event.currentTarget;
-    teacherSelected.classList.toggle('teacher--selected');
+function changeTarget(event) {
+  event.currentTarget.classList.toggle("teacher--selected");
+  if (event.currentTarget.querySelector(".favorite").innerHTML === "Añadir") {
+    var add = event.currentTarget.querySelector(".favorite").innerHTML.replace("Añadir", "Quitar");
+    event.currentTarget.querySelector(".favorite").innerHTML = add;
+  } else {
+    var remove = event.currentTarget.querySelector(".favorite").innerHTML.replace("Quitar", "Añadir");
+    event.currentTarget.querySelector(".favorite").innerHTML = remove;
+  }
 }
-// function changeText(event){
-//     const favorite = event.currentTarget;
-//     favorite.innerHTML = 'Quitar';
-// }
 
-
-teacherisra.addEventListener('click', selected);
-teachertuerto.addEventListener('click', selected);
-teachernasi.addEventListener('click', selected);
-// favoriteIsra.addEventListener('click', changeText);
-// favoriteTuerto.addEventListener('click', changeText);
-// favoriteNasi.addEventListener('click', changeText);
+isra.addEventListener("click", changeTarget);
+carlos.addEventListener("click", changeTarget);
+nasi.addEventListener("click", changeTarget);
