@@ -1,0 +1,36 @@
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main.correctYellow {
+    background-color: #ffcc00;
+}
+.main.chileanOrange {
+    background-color: #ff9900;
+}
+.face {
+    font-size: 96px;
+    font-weight: bold;
+}
+.controls {
+    margin-top: 15vh;
+}
+.controls__options {
+    font-size: 1rem;
+}
+.controls__button {
+    font-size: 1rem;
+}
