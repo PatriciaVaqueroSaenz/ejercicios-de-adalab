@@ -15,7 +15,9 @@ function refreshFace(){
 
 function generateRandomNumber(){
 
-    return Math.round(Math.random() * 100);
+    const number = Math.round(Math.random() * 100);
+
+    return number;
 }
 
 function refreshBackground(){
