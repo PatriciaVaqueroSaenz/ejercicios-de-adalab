@@ -1,19 +1,10 @@
 'use strict';
 
-// function getNumber() {
-//   fetch('https://api.rand.fun/number/integer?max=100')
-//     .then(response => response.json())
-//     .then(data => {
-//       document.body.innerHTML = data.result;
-//     });
-// }
-// document.body.addEventListener('click', getNumber);
-
-function getPassword() {
-    fetch('https://api.rand.fun/text/password?length=20')
-      .then(response => response.json())
-      .then(data => {
-        document.body.innerHTML = data.result;
-      });
-  }
-  document.body.addEventListener('click', getPassword);
+function getNumber() {
+  fetch('https://rand.fun/number/integer')
+    .then((response) => response.json())
+    .then((data) => {
+      document.querySelector('.js-result').innerHTML = data.result;
+    });
+}
+document.querySelector('.js-number').addEventListener('click', getNumber);
