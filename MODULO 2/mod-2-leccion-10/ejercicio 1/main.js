@@ -1,7 +1,7 @@
 'use strict';
 
 function getNumber() {
-  fetch('https://rand.fun/number/integer')
+  fetch('https://api.rand.fun/number/integer')
     .then((response) => response.json())
     .then((data) => {
       document.querySelector('.js-result').innerHTML = data.result;
