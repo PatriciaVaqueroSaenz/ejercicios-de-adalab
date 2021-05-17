@@ -11,9 +11,9 @@ function findCharacter() {
   fetch(`https://swapi.dev/api/people/?search=${inputName}`)
     .then((searchResponse) => searchResponse.json())
     .then((searchData) => {
-        //guardo los personajes obtenidos accediendo a results
+      //guardo los personajes obtenidos accediendo a results
       const characters = searchData.results;
-        //guardaré esos personajes en una lista
+      //guardaré esos personajes en una lista
       const characterList = document.querySelector('.js-characters');
       let content = '';
 
