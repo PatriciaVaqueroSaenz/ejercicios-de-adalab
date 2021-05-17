@@ -1,0 +1,10 @@
+
+.js-dark{
+   background-color: gray;
+   color: white; 
+}
+
+.js-light{
+    background-color: white;
+    color: gray; 
+ }
