@@ -3,7 +3,7 @@
 function boxSizing (borderBox,width,padding,border){
     
     if(borderBox === true){
-        return 'El ancho del contenido es: '+ width + 'px y el ancho total de la caja es: ' + width + 'px.';
+        return 'El ancho del contenido es: '+ (width-padding*2-border*2) + 'px y el ancho total de la caja es: ' + width + 'px.';
     }else{
         return 'El ancho del contenido es: '+ width + 'px y el ancho total de la caja es: ' + (width+padding*2+border*2) + 'px.';
     }    
