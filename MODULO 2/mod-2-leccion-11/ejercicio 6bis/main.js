@@ -20,7 +20,7 @@ function fillText(){
 
 const savedName = JSON.parse(localStorage.getItem('completeName'));
 
-if(savedName.name!=='' && savedName.lastName!==''){
+if(savedName!==null){
   inputName.value=savedName.name;
   inputLastName.value = savedName.lastName;
   text.innerHTML= savedName.name + ' ' + savedName.lastName;
