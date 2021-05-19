@@ -54,6 +54,7 @@ function changeColor(event) {
   const paragraph = document.querySelectorAll('p')[idSelect]; //selecciono el párrafo que ocupa la posición idSelect
   console.log(paragraph);
 
+  //al párrafo seleccionado le añado el color clickado
   if (indexSelected === 0) 
     paragraph.style.color = "white";
   else if (indexSelected === 1) 
