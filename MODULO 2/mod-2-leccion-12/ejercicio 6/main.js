@@ -46,14 +46,26 @@ function write() {
 //FUNCION QUE CAMBIA DE COLOR LA FRASE EN FUNCION DE LA OPCION CLICKADA EN EL SELECT
 
 function changeColor(event) {
-  let select = event.currentTarget;
-  let indexSelected = select.selectedIndex;
-  //si opt1->párrafoseleccionado.style.color = "white";
-  //si opt2->párrafoseleccionado.style.color = "blue";
-  //si opt3->párrafoseleccionado.style.color = "red";
-  //si opt4->párrafoseleccionado.style.color = "green";
-  //si opt5->párrafoseleccionado.style.color = "yellow";
-  //si opt6->párrafoseleccionado.style.color = "pink";
+
+  let select = event.currentTarget; // el select en el cual modificamos la opción con id igual a (0-99)
+  let indexSelected = select.selectedIndex; //índice de la opción seleccionada en el select (0-5)
+  let idSelect = event.currentTarget.id; //el id del select modificado
+  
+  const paragraph = document.querySelectorAll('p')[idSelect]; //selecciono el párrafo que ocupa la posición idSelect
+  console.log(paragraph);
+
+  if (indexSelected === 0) 
+    paragraph.style.color = "white";
+  else if (indexSelected === 1) 
+    paragraph.style.color = "blue";
+  else if (indexSelected === 2) 
+    paragraph.style.color = "red";
+  else if (indexSelected === 3) 
+    paragraph.style.color = "green";
+  else if (indexSelected === 4) 
+    paragraph.style.color = "yellow";
+  else 
+    paragraph.style.color = "pink";
 
 }
 write();
