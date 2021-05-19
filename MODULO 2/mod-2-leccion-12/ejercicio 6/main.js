@@ -48,6 +48,12 @@ function write() {
 function changeColor(event) {
   let select = event.currentTarget;
   let indexSelected = select.selectedIndex;
-  
+  //si opt1->párrafoseleccionado.style.color = "white";
+  //si opt2->párrafoseleccionado.style.color = "blue";
+  //si opt3->párrafoseleccionado.style.color = "red";
+  //si opt4->párrafoseleccionado.style.color = "green";
+  //si opt5->párrafoseleccionado.style.color = "yellow";
+  //si opt6->párrafoseleccionado.style.color = "pink";
+
 }
 write();
