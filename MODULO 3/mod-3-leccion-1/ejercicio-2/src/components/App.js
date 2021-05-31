@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import foto from "./foto.jpg";
-import "./App.css";
+import foto from "../image/foto.jpg";
+import "../components/App.js";
+import "../stylesheet/App.css";
 
 // get our fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
