@@ -46,3 +46,21 @@ Cualquier contribución o sugerencia será bienvenida!
 * Lección 13: Métodos funcionales de array.
 * Lección 14: Asincronía y temporizadores.
 ##### Evaluación Final
+
+***
+
+## Módulo 3:
+
+* Lección 1: Intro a React.
+* Lección 2: Intro a React II.
+* Lección 3: Componentes en React.
+* Lección 4: Eventos en React.
+* Lección 5: Estado en React.
+* Lección 6: React Hooks.
+##### Evaluación Intermedia
+* Lección 7: Formularios en React.
+* Lección 8: Buenas Prácticas.
+* Lección 9: React Router.
+* Lección 10: Ciclo de vida de componentes.
+* Lección 11: Testing con JavaScript.
+##### Evaluación Final
