@@ -3,6 +3,10 @@ import React from "react";
 import foto from "./foto.jpg";
 import "./App.css";
 // Vamos a crear un nuevo proyecto de React llamado mediacard. Vamos a modificar el método render del componente App para que tenga un diseño similar al de la imagen. Podéis usar una imagen a vuestra elección en lugar de la que aparece en el diseño, y Font-Awesome para el icono del corazón. De esta forma, aprenderemos a cómo trabajar con cosas que ya conocemos (HTML y CSS) en una aplicación de React.
+// get our fontawesome imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+
 
 function App() {
   return (
@@ -22,7 +26,10 @@ function App() {
       </main>
       <footer className="App-footer">
         <p className="App-footer-paragraph">Leer más...</p>
-        <i class="fas fa-heartbeat"></i>
+        <div className="App-footer-container">
+          <p className="App-footer-paragraph">37</p>
+          <FontAwesomeIcon icon={faHeart} className="App-icon"/>
+        </div>
       </footer>
     </div>
   );
