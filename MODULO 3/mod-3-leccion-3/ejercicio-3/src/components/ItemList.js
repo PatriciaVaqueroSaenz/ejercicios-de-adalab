@@ -26,10 +26,18 @@ const items = [
 
 class ItemList extends React.Component {
   render() {
-    const ArrayItems = items
-      // .filter(item => item.price < 10)
-      .map((item, index) => {
-        return <Item key={index} name={item.name} description={item.description} quantity={item.quantity} category={item.category} price={item.price} />;
+    const ArrayItems = items.map((item, index) => {
+        return (
+          <li>
+            <Item 
+            key={index} 
+            name={item.name} 
+            description={item.description} 
+            quantity={item.quantity} 
+            category={item.category} 
+            price={item.price} />
+          </li>
+        );
       });
     return <ul className="item-list">{ArrayItems}</ul>;
   }
