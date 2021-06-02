@@ -9,9 +9,9 @@ class HalfPage extends React.Component {
   }
   render() {
     return (
-      <>
+      <div className="half-page">
         {this.props.children}
-      </>
+      </div>
     );
   }
 }

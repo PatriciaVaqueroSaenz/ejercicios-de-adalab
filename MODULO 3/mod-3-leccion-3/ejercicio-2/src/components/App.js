@@ -6,11 +6,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <HalfPage className="half-page">
+        <HalfPage>
           <h1>Hola</h1>
           <p>Estoy a la izquierda</p>
         </HalfPage>
-        <HalfPage className="half-page">
+        <HalfPage>
           <h2>Hola</h2>
           <p>Estoy a la derecha</p>
         </HalfPage>
