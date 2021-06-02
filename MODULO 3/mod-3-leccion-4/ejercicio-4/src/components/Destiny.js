@@ -1,5 +1,6 @@
 import React from "react";
 import CityImage from './CityImage';
+import '../stylesheet/App.css';
 
 
 class Destiny extends React.Component {
@@ -19,7 +20,7 @@ class Destiny extends React.Component {
 
     return (
 
-        <div>
+        <div className="content">
           <select onChange={this.onChangeListener}>
             <option value="Buenos Aires">Buenos Aires</option>
             <option value="Sydney">Sydney</option>

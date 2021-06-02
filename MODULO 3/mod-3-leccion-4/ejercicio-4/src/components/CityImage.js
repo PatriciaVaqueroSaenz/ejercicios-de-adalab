@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheet/App.css';
 
 const Images = {
   Boston: 'https://st2.depositphotos.com/2001403/5248/i/600/depositphotos_52487179-stock-photo-boston-harbor-and-financial-district.jpg',
@@ -11,8 +12,8 @@ const Images = {
 function CityImage(props) {
   return (
       <>
-      <img className="destination-image" src={Images[props.city]} alt={props.city} />
       <p>Tu destino es viajar a {props.city}</p>
+      <img className="image" src={Images[props.city]} alt={props.city} />
       </>
   );
 
