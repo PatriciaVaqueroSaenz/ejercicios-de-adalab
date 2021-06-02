@@ -3,6 +3,7 @@ import Item from "./Item.js";
 
 const items = [
   {
+    index: 0,
     name: "Cereales con chocolate",
     description: "Cereales rellenos de chocolate",
     quantity: 2,
@@ -10,6 +11,7 @@ const items = [
     price: 5
   },
   {
+    index: 1,
     name: "Hamburguesa con queso",
     description: "Hamburguesa rica y saludable",
     quantity: 1,
@@ -17,6 +19,7 @@ const items = [
     price: 15
   },
   {
+    index: 2,
     quantity: 2,
     category: "Bebida",
     price: "a"
@@ -26,8 +29,17 @@ const items = [
 class ItemList extends React.Component {
     render() {
       const ArrayItems = items
-        .map((item, index) => {
-          return <Item key={index} name={item.name} description={item.description} quantity={item.quantity} category={item.category} price={item.price} />;
+        .map((item) => {
+          return (
+            <li key={item.index}>
+              <Item 
+              name={item.name} 
+              description={item.description} 
+              quantity={item.quantity} 
+              category={item.category} 
+              price={item.price} />
+            </li>
+          );
         });
       return <ul className="item-list">{ArrayItems}</ul>;
     }
