@@ -22,7 +22,7 @@ class Destiny extends React.Component {
 
         <div className="content">
           <select onChange={this.onChangeListener}>
-            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="BuenosAires">Buenos Aires</option>
             <option value="Sydney">Sydney</option>
             <option value="Praga">Praga</option>
             <option value="Boston">Boston</option>
