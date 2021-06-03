@@ -3,16 +3,15 @@ import CitySelector from './CitySelector';
 import '../stylesheet/App.css';
 
 
-class Destiny extends React.Component {
+class App extends React.Component {
   
   constructor(props) {
     super(props);
-    this.myDestiny = '...';
-    this.selectedCity = 'Boston';
-    this.handleClick = this.handleClick.bind(this);
+    this.selectedCity = 'BuenosAires';
+    this.handleChange = this.handleChange.bind(this);
   };
   
-  handleClick(event){
+  handleChange(event){
     this.selectedCity= event.target.value;
     this.forceUpdate();
   }
@@ -21,10 +20,12 @@ class Destiny extends React.Component {
 
     return (
         <div className="content">
-          <CitySelector onChange={this.handleClick}/>
+          <CitySelector 
+          selectedCity={this.selectedCity} 
+          handleChange={this.handleChange}/>
         </div>
     );
   }
 }
 
-export default Destiny;
+export default App;
