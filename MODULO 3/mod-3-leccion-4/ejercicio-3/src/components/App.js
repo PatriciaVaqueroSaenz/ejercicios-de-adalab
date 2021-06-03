@@ -5,6 +5,7 @@ class OnionHater extends React.Component {
   
   constructor(props) {
     super(props);
+    this.isOnion = false;
     this.handleWrite = this.handleWrite.bind(this);
   }
   
