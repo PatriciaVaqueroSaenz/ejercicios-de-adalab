@@ -1,0 +1,15 @@
+.image{
+  width: 200px;
+  height: 200px;
+  display: block;
+  border: solid 2px lightskyblue;
+}
+.content{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+}
