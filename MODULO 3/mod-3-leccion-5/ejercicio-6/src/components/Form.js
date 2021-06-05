@@ -8,7 +8,7 @@ class Form extends React.Component {
   
   handleChange(ev){
     console.log(this.props);
-    this.props.handleChangeLifting(ev.target.name,ev.target.value)
+    this.props.handleChange(ev.target.name,ev.target.value)
   }
   
   

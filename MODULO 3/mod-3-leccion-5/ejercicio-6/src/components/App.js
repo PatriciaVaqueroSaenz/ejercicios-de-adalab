@@ -15,20 +15,18 @@ class App extends React.Component {
         }
     };
   
-    this.handleChangeLifting = this.handleChangeLifting.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChangeLifting(indexKey, value){
+  handleChange(indexKey, value){
     if (indexKey.includes("Name")) {
-      this.setState({
-        [indexKey] : value
-      });
+      this.setState({[indexKey] : value});
     } else {
       this.setState((prevState) => {
         return {
           birthDate: {
             ...prevState.birthDate,
-            [indexKey]: value,
+            [indexKey]: parseInt(value),
           },
         };
       });
@@ -37,8 +35,9 @@ class App extends React.Component {
 
 
   render() {
+    console.log('El estado es', this.state);
     return (
-      <Form handleChangeLifting={this.handleChangeLifting} state = {this.state}/>
+      <Form handleChange={this.handleChange}/>
     );
   }
 }
