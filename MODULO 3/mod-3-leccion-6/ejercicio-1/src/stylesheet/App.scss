@@ -1,0 +1,25 @@
+.content{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../image/cumple.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.text{
+  font-size: 40px;
+  background-color: beige;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid 1px black;
+}
+
+.button{
+  height: 30px;
+  background-color: greenyellow;
+  border: solid 1px black;
+  border-radius: 15px;
+}
