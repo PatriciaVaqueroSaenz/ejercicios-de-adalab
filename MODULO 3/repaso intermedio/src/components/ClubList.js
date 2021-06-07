@@ -2,12 +2,22 @@ import React from "react";
 import Club from "./Club";
 import '../stylesheet/App.scss';
 
-class ClubList extends React.Component {
-  render() {
+const ClubList = (props) =>{
+    
+    const clubItems = props.list.map(
+      (item, index)=>{
+        return (
+                <li key={index}>
+                  <Club item={item}/>
+                </li>
+        );
+    });
     return (
-      <Club />
+      <>
+        <ul>{clubItems}</ul>
+      </>
     );
-  }
+  
 }
 
 export default ClubList;

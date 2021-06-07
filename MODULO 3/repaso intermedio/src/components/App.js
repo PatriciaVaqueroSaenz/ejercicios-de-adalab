@@ -1,13 +1,14 @@
 import React from "react";
 import ClubList from "./ClubList";
+import data from '../data/data.json';
 import '../stylesheet/App.scss';
 
-class App extends React.Component {
-  render() {
+
+const App =()=> {
+  
     return (
-      <ClubList />
+      <ClubList list ={data}/>
     );
-  }
 }
 
 export default App;
