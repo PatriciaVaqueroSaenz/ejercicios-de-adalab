@@ -1,0 +1,15 @@
+.list{
+  width:400px;
+  list-style: none;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.iconButton{
+  height:30px;
+}
+.content{
+  display: block;
+}
