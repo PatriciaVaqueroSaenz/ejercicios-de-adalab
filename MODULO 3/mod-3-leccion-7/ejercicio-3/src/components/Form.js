@@ -90,6 +90,7 @@ const Form = (props) => {
           type="radio"
           value="all"
           name="age"
+          checked={props.age === 'all'}
         />
         <label htmlFor="7">7</label>
         <input
@@ -98,6 +99,7 @@ const Form = (props) => {
           type="radio"
           value="7"
           name="age"
+          checked={props.age === '7'}
         />
         <label htmlFor="12">12</label>
         <input
@@ -106,6 +108,7 @@ const Form = (props) => {
           type="radio"
           value="12"
           name="age"
+          checked={props.age === '12'}
         />
         <label htmlFor="16">16</label>
         <input
@@ -114,6 +117,7 @@ const Form = (props) => {
           type="radio"
           value="16"
           name="age"
+          checked={props.age === '16'}
         />
         <label htmlFor="18">18</label>
         <input
@@ -122,6 +126,7 @@ const Form = (props) => {
           type="radio"
           value="18"
           name="age"
+          checked={props.age === '18'}
         />
 {/* ---------------------------------------------------- */}
         <label htmlFor="Comedia">Comedia</label>
