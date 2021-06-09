@@ -3,27 +3,72 @@ import "../stylesheet/App.scss";
 
 const Form = (props) => {
   
-    const handleFormChange = (ev) => {
+    //input
+    const handleInput = (ev) => { 
+        const inputName = ev.currentTarget.name;
+        const inputValue = ev.currentTarget.value;
         
-        const name = ev.target.name;
-        const value = ev.target.value;
-        
-        props.handleChange(name, value);
+        props.handleInput(inputName, inputValue);
     };
+
+    //description
+    const handleDescription = (ev) => { 
+      const inputName = ev.currentTarget.name;
+      const inputValue = ev.currentTarget.value;
+      
+      props.handleDescription(inputName, inputValue);
+    };
+
+    //select
+    const handleFormChange = (ev) => { 
+      const inputName = ev.currentTarget.name;
+      const inputValue = ev.currentTarget.value;
+      
+      props.handleFormChange(inputName, inputValue);
+    };
+
+    //checkbox
+    const handleCheckbox = (ev) => { 
+      const inputName = ev.currentTarget.name;
+      const inputValue = ev.currentTarget.value;
+      
+      props.handleCheckbox(inputName, inputValue);
+    };
+
+  //radiobutton
+    const handleRadio = (ev) => { 
+      const inputName = ev.currentTarget.name;
+      const inputValue = ev.currentTarget.value;
+      
+      props.handleRadio(inputName, inputValue);
+    };
+
 
     return (
     <form className="form">
+      
       <label htmlFor="name">Name:</label>
-      <input onChange={handleFormChange} id="name" type="text" name='name'/>
-
-      <label htmlFor="text">Text:</label>
-      <textarea onChange={handleFormChange} id="text" name="description"></textarea>
-
+      <input 
+      onChange={handleInput} 
+      id="name" 
+      type="text" 
+      name='name'
+      value={props.name}/>
+{/* ---------------------------------------------------- */}
+      <label htmlFor="description">Text:</label>
+      <textarea  
+      id="description" 
+      name="description"
+      onChange={handleDescription} 
+      value={props.description}
+      ></textarea>
+{/* ---------------------------------------------------- */}
+      <label>Idioma</label>
       <select
         className="select"
         name="language"
-        id="lang"
         onChange={handleFormChange}
+        value={props.language}
       >
         <option name="language" value="Español">
           Español
@@ -36,9 +81,11 @@ const Form = (props) => {
         </option>
       </select>
 
+{/* ---------------------------------------------------- */}
+
       <label htmlFor="all">Todos los públicos</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleRadio}
           id="all"
           type="radio"
           value="all"
@@ -46,7 +93,7 @@ const Form = (props) => {
         />
         <label htmlFor="7">7</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleRadio}
           id="7"
           type="radio"
           value="7"
@@ -54,7 +101,7 @@ const Form = (props) => {
         />
         <label htmlFor="12">12</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleRadio}
           id="12"
           type="radio"
           value="12"
@@ -62,7 +109,7 @@ const Form = (props) => {
         />
         <label htmlFor="16">16</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleRadio}
           id="16"
           type="radio"
           value="16"
@@ -70,16 +117,16 @@ const Form = (props) => {
         />
         <label htmlFor="18">18</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleRadio}
           id="18"
           type="radio"
           value="18"
           name="age"
         />
-
+{/* ---------------------------------------------------- */}
         <label htmlFor="Comedia">Comedia</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleCheckbox}
           id="Comedia"
           type="checkbox"
           value="Comedia"
@@ -87,7 +134,7 @@ const Form = (props) => {
         />
         <label htmlFor="Drama">Drama</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleCheckbox}
           id="Drama"
           type="checkbox"
           value="Drama"
@@ -95,7 +142,7 @@ const Form = (props) => {
         />
         <label htmlFor="Fantasía">Fantasía</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleCheckbox}
           id="Fantasía"
           type="checkbox"
           value="Fantasía"
@@ -103,7 +150,7 @@ const Form = (props) => {
         />
         <label htmlFor="Acción">Acción</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleCheckbox}
           id="Acción"
           type="checkbox"
           value="Acción"
@@ -111,7 +158,7 @@ const Form = (props) => {
         />
         <label htmlFor="Familia">Familia</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleCheckbox}
           id="Familia"
           type="checkbox"
           value="Familia"
@@ -119,7 +166,7 @@ const Form = (props) => {
         />
          <label htmlFor="Terror">Terror</label>
         <input
-          onChange={handleFormChange}
+          onChange={handleCheckbox}
           id="Terror"
           type="checkbox"
           value="Terror"
