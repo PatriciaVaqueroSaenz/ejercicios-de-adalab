@@ -1,5 +1,7 @@
 import React from 'react';
 import getDataFromApi from '../services/api';
+import { Link, Route, Switch } from 'react-router-dom';
+import PersonDetail from './PersonDetail'
 
 class App extends React.Component {
   constructor(props) {
@@ -45,19 +47,10 @@ class App extends React.Component {
       .filter(user => {
         return user.gender.toLowerCase().includes(this.state.filterGender.toLowerCase());
       })
-      .map(user => {
+      .map((user,index) => {
         return <li key={user.name}>
           <section>
-              <h3>Nombre: {user.name}</h3>
-              <img src={user.image} alt={user.name} />
-              <ul>
-                <li>Género: {user.gender}</li>
-                <li>Email: {user.email}</li>
-                <li>Nick: {user.username}</li>
-                <li>Ciudad: {user.city}</li>
-                <li>País: {user.country}</li>
-                <li>Edad: {user.age}</li>
-              </ul>
+              <Link to={`/child/${index}`}>{user.name}</Link>
             </section>
           
           </li>;
@@ -74,6 +67,18 @@ class App extends React.Component {
         <input type="text" onChange={this.handleFilterGender} placeholder="filter by gender" />
 
         <ul>{this.renderSeriesList()}</ul>
+        
+        <Switch>
+          <Route
+            path="/child/:id"
+            render={(routerProps) => (
+              <PersonDetail
+                match={routerProps.match}
+                data={this.state.users}
+              />
+            )}
+          />
+        </Switch>
       </div>
     );
   }
