@@ -10,9 +10,12 @@ function App() {
     { name: 'Gregory Goyle', time: 56 }
   ];
   
-  const [first] = users;
-  const [, second] = users;
-  const [,, third] = users;
+  const [
+    {name: firstname, time: firsttime},
+    {name: secondname, time: secondtime},
+    {name: thirdname, time: thirdtime}
+  ] = users;
+  
 
   
   
@@ -20,13 +23,13 @@ function App() {
       <>
       <p>El podium es: </p>
       <p>
-        {`En primer lugar ${first.name} con un tiempo de ${first.time}.`} 
+        {`En primer lugar ${firstname} con un tiempo de ${firsttime}.`} 
       </p>
       <p> 
-        {`En segundo lugar ${second.name} con un tiempo de ${second.time}.`}
+        {`En segundo lugar ${secondname} con un tiempo de ${secondtime}.`}
       </p>
       <p>
-        {`En tercer lugar ${third.name} con un tiempo de ${third.time}.`}
+        {`En tercer lugar ${thirdname} con un tiempo de ${thirdtime}.`}
       </p>
       </>
     );
