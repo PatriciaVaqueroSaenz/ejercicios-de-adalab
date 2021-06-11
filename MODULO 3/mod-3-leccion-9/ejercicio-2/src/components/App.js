@@ -15,7 +15,6 @@ class App extends React.Component {
     };
 
     getDataFromApi().then(data => {
-      console.log(data);
       this.setState({
         users: data,
         isLoading: false
@@ -71,6 +70,8 @@ class App extends React.Component {
         <Switch>
           <Route
             path="/child/:id"
+            //:id es lo que se define en link como ${index}
+            //de aqui sale routerProps.match.params.id
             render={(routerProps) => (
               <PersonDetail
                 match={routerProps.match}

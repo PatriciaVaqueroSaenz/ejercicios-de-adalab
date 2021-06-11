@@ -2,12 +2,22 @@ import React from 'react';
 
 
 class PersonDetail extends React.Component {
-
-    render() {
+  
+  renderProductoDetail (match) {
+    const routerPersonId = match.params.id;
+    const personFound = data.find(user => user.id === routerPersonId);
+    if (personFound) {
+      return user={personFound};
+    } else {
+      return '';
+    }
+  };
+    
+  render() {
         return (
             <div>
-            <h3>Nombre: {this.props.name}</h3>
-            <img src={this.props.image} alt={this.props.data.name} />
+            <h3>Nombre: {this.user.name}</h3>
+            <img src={this.person.image} alt={this.person.name} />
               <ul>
                 <li>Género: {this.props.data.gender}</li>
                 <li>Email: {this.props.data.email}</li>
