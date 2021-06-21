@@ -1,7 +1,17 @@
 // get users data
 
 document.querySelector('.js-btn-get-users').addEventListener('click', () => {
-    fetch('http://localhost:3000/users')
+  //------------MODIFICACIÓN EJERCICIO 2 -----------------
+  const requestData = {
+    userName: document.querySelector('.js-username2').value
+  };
+    fetch('http://localhost:3500/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(requestData)
+    })
       .then(response => response.json())
       .then(responseData => {
         console.log('Data:', responseData);
@@ -16,7 +26,9 @@ document.querySelector('.js-btn-get-users').addEventListener('click', () => {
       userName: document.querySelector('.js-username').value
     };
   
-    fetch('http://localhost:3000/new-user', {
+    //------------MODIFICACIÓN EJERCICIO 2 -----------------
+    //fetch('http://localhost:3000/new-user', {
+    fetch('http://localhost:3500/users/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
