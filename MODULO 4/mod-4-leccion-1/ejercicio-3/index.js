@@ -23,7 +23,7 @@ const writeFile = (fileName, fileContent, callback) => {
 readFile("./inputFile.json", (fileContent) => {
   const data = JSON.parse(fileContent);
   data.user = "user";
-  writeFile("./output.txt", JSON.stringify(data), () => {
+  writeFile("./output.json", JSON.stringify(data), () => {
     console.log("The file has been copied!");
   });
 });
