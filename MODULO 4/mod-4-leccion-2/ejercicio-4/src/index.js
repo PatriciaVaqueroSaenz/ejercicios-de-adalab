@@ -46,7 +46,8 @@ server.get('/users', (req, res) => {
   const filterName = req.query.filterByName;
 
   const filteredUsers = users.filter((user) => {
-    return user.name.toLowerCase().includes(filterName.toLowerCase());
+    
+    return filterName === "" ? true : user.name.toLowerCase().includes(filterName.toLowerCase());
   });
 
 
