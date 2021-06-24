@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const films = require('./films-data.json');
+const directors = require('./directors-data.json');
 
 // create app server
 const app = express();
@@ -30,5 +31,20 @@ app.get('/es/film:filmId.html', (req, res) => {
     res.render('pages/film', filmData);
   } else {
     res.render('pages/film-not-found');
+  }
+});
+
+app.get('/es/directora/:directorId', (req, res) => {
+  const directorId = req.params.directorId;
+  const foundDirector = directors.find(director => {
+    return director.id === directorId;
+  });
+
+  // response with rendered template
+  if (foundDirector) {
+    console.log(foundDirector);
+    res.render('pages/director', foundDirector);
+  } else {
+    res.render('pages/director-not-found');
   }
 });
